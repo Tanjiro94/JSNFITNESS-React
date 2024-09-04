@@ -1,0 +1,97 @@
+/* Les étapes pour s'abonner et profiter */
+
+.etape-section{
+    color: var(--noir);
+    padding-bottom: var(--margin-section);
+  }
+  .etape-section .text-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: var(--margin-section);
+  }
+  
+  .etape-section .etape-wrapper .etape{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  .etape-section .etape-wrapper .etape:nth-child(1){
+    z-index: 4;
+  }
+  .etape-section .etape-wrapper .etape:nth-child(2){
+    z-index: 3;
+  }
+  .etape-section .etape-wrapper .etape:nth-child(3){
+    z-index: 2;
+  }
+  .etape-section .etape-wrapper .etape:nth-child(4){
+    z-index: 1;
+  }
+  .etape-section .etape-wrapper .etape .left-wrapper .img-wrapper{
+    width: 100%;
+    height: 33rem;
+    overflow: hidden;
+  }
+  .etape-section .etape-wrapper .etape .left-wrapper .img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+  }
+  .etape-section .etape-wrapper .etape .right-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .etape-section .etape-wrapper .etape .right-wrapper div{
+    margin-bottom: var(--margin-top-bottom);
+  }
+  .etape-section .etape-wrapper .etape .right-wrapper .desc-wrapper{
+    width: 80%;
+  }
+  .etape-section .etape-wrapper .etape .right-wrapper .btn-wrapper{
+    width: 100%;
+  }
+  .etape-section .etape-wrapper .etape .right-wrapper .btn-wrapper button{
+    cursor: pointer;
+  }
+  .etape-section .etape-wrapper .etape .right-wrapper .btn-wrapper button:nth-child(1){
+    background-color: var(--noir);
+    color: var(--blanc);
+    margin-right: 2rem;
+  }
+  .etape-section .etape-wrapper .etape .right-wrapper .btn-wrapper button:nth-child(2){
+    border: 2px solid var(--noir);
+    color: var(--noir);
+  }
+  
+  @media screen and (max-width: 1023px){
+    .etape-section .etape-wrapper .etape{
+      margin-bottom: var(--margin-top-bottom);
+    }
+  }
+  @media screen and (max-width: 992px){
+    .etape-section .etape-wrapper .etape{
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .etape-section .etape-wrapper .etape .right-wrapper .desc-wrapper{
+      width: 100%;
+    }
+    .etape-section .etape-wrapper .etape .right-wrapper .btn-wrapper button:nth-child(1){
+      margin-right: 0 0;
+      margin-bottom: var(--margin-top-bottom);
+    }
+  }
+  
+  @media screen and (max-width: 481px){
+    .etape-section .etape-wrapper .etape .left-wrapper .img-wrapper {
+      height: 20rem;
+  }
+  }
+  
+  /* Les étapes pour s'abonner et profiter */

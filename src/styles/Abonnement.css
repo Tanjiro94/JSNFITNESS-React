@@ -1,0 +1,72 @@
+/* Presentation des formules d'abonnement */
+.abonnement-section{
+    height: auto;
+    background-color: var(--blanc);
+    color: var(--noir);
+    padding-top: var(--margin-section);
+  }
+  .abonnement-section .text-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: var(--margin-section);
+  }
+  .abonnement-section .text-wrapper div{
+    margin-bottom: var(--margin-top-bottom);
+  }
+  .abonnement-section .text-wrapper .desc-wrapper{
+    margin-bottom: 0;
+  }
+  .abonnement-section .text-wrapper .titre-wrapper h2{
+    text-transform: uppercase;
+  }
+  .abonnement-section .abonnement-card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .abonnement-section .abonnement-card-wrapper .abonnement-card-column{
+    cursor: pointer;
+  }
+  .abonnement-section .abonnement-card-wrapper .abonnement-card-column .prix-wrapper p{
+    font-size: var(--h5);
+  }
+  .abonnement-section .abonnement-card-wrapper .abonnement-card-column:nth-child(2){
+    transform: translateY(40px);
+  }
+  .abonnement-section .abonnement-card-wrapper .abonnement-card-column .abonnement-card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 30rem;
+    padding: var(--margin-top-bottom);
+    background-color: var(--noir);
+    color: var(--blanc);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+  .abonnement-section .abonnement-card-wrapper .abonnement-card-column .abonnement-card .titre-wrapper{
+    margin-bottom: var(--margin-top-bottom);
+  }
+  .abonnement-section .abonnement-card-wrapper .abonnement-card-column .abonnement-premium{
+    background: url(../assets/abonnement-premium.webp),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    background-position: bottom;
+  }
+  .abonnement-section .abonnement-card-wrapper .abonnement-card-column .abonnement-standard{
+    background: url(../assets/abonnement-standard.webp),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @media screen and (max-width: 768px){
+    .abonnement-section .abonnement-card-wrapper .abonnement-card-column .abonnement-card{
+      height: 25rem;
+      margin-bottom: var(--margin-top-bottom);
+    }
+    .abonnement-section .text-wrapper{
+      margin-bottom: var(--margin-top-bottom);
+    }
+  }
+  /* Presentation des formules d'abonnement */

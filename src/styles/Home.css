@@ -1,0 +1,95 @@
+.hero-section{
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+} 
+.hero-section .content{
+  padding-bottom: var(--margin-section);
+  color: var(--blanc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+}
+.hero-section .content .content-row{
+justify-content: center;
+align-items: center;
+}
+.hero-section .content .title{
+  text-align: center;
+  text-transform: uppercase;
+  margin: var(--margin-top-bottom);
+}
+.hero-section .content .desc-wrapper{
+  text-align: center;
+}
+.hero-section .content .title h1{
+font-size: var(--h1-accueil);
+}
+.hero-section .video-hero{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -2;
+}
+.hero-section .content .desc-wrapper{
+margin-bottom: var(--margin-section);
+}
+.hero-section .content .devise-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.hero-section .content .devise-container p{
+font-size: var(--h4);
+}
+.hero-section .video-hero video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-section .mask-video{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  background-color: var(--noir);
+  opacity: 0.35;
+}
+
+@media screen and (max-width: 992px){
+.hero-section .content{
+  padding-top: 25rem;
+}
+}
+
+@media screen and (max-width: 481px){
+.hero-section .content .devise-container{
+  display: none;
+}
+.hero-section .content{
+  padding-top: 20rem;
+}
+}
+@media screen and (max-width: 350px){
+.hero-section .content{
+  padding-top: 10rem;
+}
+}
+
+/* A propos section */
+
+.a-propos{
+  height: auto;
+  background-color: var(--rouge);
+  color: var(--blanc);
+  padding-top: var(--margin-section);
+  padding-bottom: var(--margin-section);
+}

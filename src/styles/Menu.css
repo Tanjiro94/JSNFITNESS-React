@@ -1,0 +1,123 @@
+.nav-menu-wrapper{
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 999;
+  background: var(--blanc);
+  color: var(--noir);
+  padding: var(--margin-top-bottom);
+  height: 100vh;
+  width: 40%;
+  border-radius: 0 var(--border-radius) 0  0;
+}
+.nav-menu-wrapper .nav-menu{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.nav-menu-wrapper .nav-menu .en-tete{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-menu-wrapper .nav-menu .en-tete .logo-wrapper img{
+  width: 157px;
+  height: 22px;
+}
+.nav-menu-wrapper .nav-menu .en-tete .close{
+  cursor: pointer;
+}
+.nav-menu-wrapper .nav-menu .en-tete .close .line{
+  width: 40px;
+  height: 2px;
+  margin: 5px 0;
+  background-color: var(--noir);
+}
+.nav-menu-wrapper .nav-menu .en-tete .panier-icon{
+  cursor: pointer;
+  position: relative;
+}
+.nav-menu-wrapper .nav-menu .en-tete .panier-icon .nb-panier-wrapper{
+  position: absolute;
+  top: 100%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--rouge);
+  color: var(--blanc);
+  display: flex;
+  font-size: var(--p);
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 350px){
+  .nav-menu-wrapper .nav-menu .en-tete .panier-icon .nb-panier-wrapper{
+    width: 20px;
+    height: 20px;
+  }
+}
+.nav-menu-wrapper .nav-menu .en-tete .panier-icon img{
+  width: 28px;
+  height: 28px;
+}
+.nav-menu-wrapper .nav-menu .links-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-menu-wrapper .nav-menu .links-wrapper ul li{
+  text-align: center;
+  font-size: var(--menu-li);
+  margin: var(--margin-top-bottom) 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.nav-menu-wrapper .nav-menu .links-wrapper ul li span{
+  display: inline-flex;
+}
+.nav-menu-wrapper .nav-menu .pied{
+  text-align: center;
+  width: 100%;
+}
+.nav-menu-wrapper .nav-menu .pied p{
+  margin-bottom: var(--margin-top-bottom);
+  cursor: pointer;
+}
+.nav-menu-wrapper .nav-menu .pied button{
+  background-color: var(--noir);
+  color: var(--blanc);
+  width: 90%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px){
+  .nav-menu-wrapper{
+    width: 100%;
+    border-radius: 0 0 0  0;
+  }
+  .nav-menu-wrapper .nav-menu .pied button{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 481px){
+  .nav-menu-wrapper .nav-menu .pied button{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .nav-menu-wrapper .nav-menu .en-tete .logo-wrapper img{
+    width: 100px;
+    height: 14px;
+  }
+  .nav-menu-wrapper .nav-menu .en-tete .panier-icon img{
+    width: 20px;
+    height: 20px;
+  }
+}

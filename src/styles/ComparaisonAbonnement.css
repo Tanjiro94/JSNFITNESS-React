@@ -1,0 +1,99 @@
+/* Comparatif des formules d'abonnement */
+.comparatif-section{
+    background-color: var(--blanc);
+    color: var(--noir);
+    padding-top: var(--margin-section);
+    padding-bottom: var(--margin-section);
+    overflow: hidden;
+  }
+  .comparatif-section .text-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: var(--margin-section);
+  }
+  .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif{
+    background-color: var(--noir);
+    color: var(--blanc);
+    padding: var(--margin-top-bottom);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif .abonnement .titre-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--margin-section);
+  }
+  .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif .abonnement-premium{
+    border-right: 2px solid var(--blanc);
+  }
+  .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif .abonnement .comparatif-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif .abonnement .comparatif-wrapper .comparatif{
+    width: 100%;
+    padding: var(--m-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif .abonnement .comparatif-wrapper .comparatif .icon-wrapper{
+    margin-right: var(--margin-top-bottom);
+    padding: var(--margin-top-bottom);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--blanc);
+  }
+  .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif .abonnement .comparatif-wrapper .comparatif .icon-wrapper .coche{
+    width: 28px;
+    height: 20px;
+  }
+  .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif .abonnement .comparatif-wrapper .comparatif .icon-wrapper .croix{
+    width: 20px;
+    height: 20px;
+  }
+  
+  @media screen and (max-width: 992px){
+    .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif{
+      flex-direction: column;
+    }
+    .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif .abonnement-premium{
+      border-right: none;
+      border-bottom: 2px solid var(--blanc);
+      margin-bottom: var(--m-padding);
+    }
+    .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif .abonnement-premium .comparatif-wrapper .comparatif:nth-last-child(1){
+      margin-bottom: var(--m-padding);
+    }
+    .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif .abonnement .comparatif-wrapper .comparatif{
+      padding: var(--margin-top-bottom) 0;
+    }
+    .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif .abonnement .titre-wrapper{
+      margin-bottom: var(--margin-top-bottom);
+    }
+    .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif .abonnement .titre-wrapper{
+      justify-content: flex-start;
+    }
+  }
+  @media screen and (max-width: 481px){
+    .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif .abonnement .comparatif-wrapper .comparatif{
+      flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .comparatif-section .rectangle-comparatif-row .rectangle-comparatif-column .rectangle-comparatif .abonnement .comparatif-wrapper .comparatif .icon-wrapper{
+      margin-bottom: var(--margin-top-bottom);
+    }
+  }
+  /* Comparatif des formules d'abonnement */
